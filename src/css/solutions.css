@@ -1,0 +1,76 @@
+.featured {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 600px;
+  width: 100%;
+}
+
+.mainContainer {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.featuredCard {
+  width: 320px;
+  height: 550px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
+  gap: 20px;
+  padding: 20px;
+  box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.095);
+  background-image: linear-gradient(to top, #25606c 50%, transparent 50%);
+  background-size: 100% 200%;
+  background-position: top;
+  transition: background-position 0.5s ease-in-out;
+}
+
+.featuredCard:hover {
+  background-position: bottom;
+  cursor: pointer;
+}
+
+.featuredCard i {
+  color: #25606c;
+  font-size: 36px;
+}
+
+.featuredCard:hover > i {
+  color: white;
+}
+
+.featuredCard h3 {
+  color: #555555;
+  font-size: 24px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.featuredCard:hover > h3 {
+  color: white;
+}
+
+.featuredCard p {
+  color: #555555;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+}
+
+.featuredCard:hover > p {
+  color: white;
+}
+
+.icons {
+  font-size: 50px;
+  color: #25606c;
+}
+
+.featuredCard:hover .icons {
+  color: white;
+}
